@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#63673AB7"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/gliter1"
+        android:layout_width="419dp"
+        android:layout_height="263dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/backround" />
+
+    <ImageView
+        android:id="@+id/gliter2"
+        android:layout_width="419dp"
+        android:layout_height="275dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.576"
+        app:srcCompat="@drawable/backround" />
+
+    <ImageView
+        android:id="@+id/gliter3"
+        android:layout_width="410dp"
+        android:layout_height="276dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/backround" />
+
+    <TextView
+        android:id="@+id/childque"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:background="#F1EEF6"
+        android:text="انشأ حساب لطفلك"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/childQ"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:background="#2380F0"
+        android:text="أسئلة عن طفلك"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.181" />
+
+    <Button
+        android:id="@+id/createPro"
+        android:layout_width="177dp"
+        android:layout_height="41dp"
+        android:background="#9C27B0"
+        android:text="انشأ الحساب"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.72" />
+
+    <Button
+        android:id="@+id/LoginPro"
+        android:layout_width="121dp"
+        android:layout_height="49dp"
+        android:background="#2380F0"
+        android:onClick="haveaccount"
+        android:text="تسجيل الدخول"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.844" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.944" />
+
+    <EditText
+        android:id="@+id/FN2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="192dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="الاسم الأول"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <EditText
+        android:id="@+id/LN2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="260dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="الاسم الأخير"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.363"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1" />
+
+    <EditText
+        android:id="@+id/DOB2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="تاريخ الميلاد"
+        android:inputType="date"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <EditText
+        android:id="@+id/Email2"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="البريد الإلكتروني"
+        android:inputType="textEmailAddress"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@+id/gliter3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.533" />
+
+    <EditText
+        android:id="@+id/Pass1"
+        android:layout_width="400dp"
+        android:layout_height="35dp"
+        android:background="#FFFFFF"
+        android:ems="10"
+        android:hint="كلمة المرور"
+        android:inputType="textPassword"
+        android:singleLine="false"
+        android:textAlignment="viewEnd"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/gliter1"
+        app:layout_constraintVertical_bias="0.603" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "37569214801",
+    "firebase_url": "https://project-shoaa.firebaseio.com",
+    "project_id": "project-shoaa",
+    "storage_bucket": "project-shoaa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37569214801:android:581ffd790aad4182babb70",
+        "android_client_info": {
+          "package_name": "com.example.uni"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "37569214801-16kb5lrp2q9jlolip1ulvr49k4tc0g23.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uni",
+            "certificate_hash": "9dee77d0c1dfddec7f9e3c81730a76ccaa8ce049"
+          }
+        },
+        {
+          "client_id": "37569214801-6pr588rje9e7rsqjcvn0j2dbihumlsce.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDoNNwh7ZNKUnPZgUcVJNLJUZkSDndK9vs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "37569214801-6pr588rje9e7rsqjcvn0j2dbihumlsce.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

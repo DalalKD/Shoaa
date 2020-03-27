@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game1">
+
+    <ImageView
+        android:id="@+id/SkyViewA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sky" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="179dp"
+        android:layout_height="45dp"
+        android:background="#2196F3"
+        android:onClick="Logout"
+        android:text="تسجيل الخروج"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.556"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
+    <ImageButton
+        android:id="@+id/ParentButtonB"
+        android:layout_width="57dp"
+        android:layout_height="52dp"
+        android:onClick="parent"
+        android:scaleType="centerInside"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/SkyViewA"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SkyViewA"
+        app:layout_constraintVertical_bias="0.023"
+        app:srcCompat="@drawable/parent" />
+
+    <ImageButton
+        android:id="@+id/NumberButtonD"
+        android:layout_width="348dp"
+        android:layout_height="256dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.634"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SkyViewA"
+        app:layout_constraintVertical_bias="0.168"
+        app:srcCompat="@drawable/numbers" />
+
+    <Button
+        android:id="@+id/GameButtonB"
+        android:layout_width="152dp"
+        android:layout_height="wrap_content"
+        android:onClick="Game"
+        android:text="لعبة الأرقام"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.528"
+        app:layout_constraintStart_toStartOf="@+id/SkyViewA"
+        app:layout_constraintTop_toTopOf="@+id/SkyViewA"
+        app:layout_constraintVertical_bias="0.452" />
+
+    <Button
+        android:id="@+id/GameButtonC"
+        android:layout_width="161dp"
+        android:layout_height="52dp"
+        android:onClick="shape"
+        android:text="لعبة الأشكال"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@+id/SkyViewA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ShapeButtonE"
+        app:layout_constraintVertical_bias="0.038" />
+
+    <ImageButton
+        android:id="@+id/ShapeButtonE"
+        android:layout_width="354dp"
+        android:layout_height="244dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="@+id/SkyViewA"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.733"
+        app:srcCompat="@drawable/shape" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
